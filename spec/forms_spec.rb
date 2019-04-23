@@ -57,7 +57,7 @@ RSpec.describe 'index.html' do
       expect(labels[3].attributes["for"].value).to eq("message"), "Include a label with a 'for' attribute set to 'message'"
     end
 
-    it 'contains an <textarea> tag with an id of "message" and placeholder equal to "Enter Message" ' do
+    it 'contains a <textarea> tag with an id of "message" and placeholder equal to "Enter Message" ' do
       input = parsed_html.search('textarea')[0]
       expect(input.attributes["id"]).to_not be_nil, "No id attribute was found on the 'textarea' tag"
       expect(input.attributes["id"]).to match(/message/) , "The textarea tag should have an id set to 'message'"
