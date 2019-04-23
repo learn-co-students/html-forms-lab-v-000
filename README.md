@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Business of all types and sizes want to provide multiple ways for their potential
+Businesses of all types and sizes want to provide multiple ways for their potential
 customers to contact them.  One of the most common ways to do this is on a website is to provide
 a _contact form_.
 
@@ -11,7 +11,7 @@ contact form similar to those we see on business websites.
 
 ## Objectives
 
-1. Apply what we know of HTML forms to build a functional a contact form
+1. Apply what we know of HTML forms to build a functional contact form
 
 ## Reinforcing Our Understanding of HTML Forms
 
