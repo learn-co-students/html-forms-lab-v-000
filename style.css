@@ -1,10 +1,9 @@
 form * {
   display: block;
   width: 80%;
-  margin: 1em;
+  margin: 0.5em;
 }
 
 #checkbox {
-  display:inline;
-
+  display: inline;
 }
