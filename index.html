@@ -11,7 +11,22 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form action="http://example.com/process-user.php" method="GET">
+      <label for="fullname">Name</label>
+      <input required type="text" id="fullname" placeholder="Enter Name">
+      <label for="email">Email</label>
+      <input required type="email" id="email" placeholder="Enter Email">
+      <label for="phone">Telephone</label>
+      <input type="tel" id="phone" placeholder="Enter Telephone (optional)">
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Enter Message"></textarea>
+      <h3>What would you like to do?</h3>
+      <input type="checkbox" name="option-1" value="newsletter">Sign up for our newsletter<br>
+      <input type="checkbox" name="option-2" value="promotions">Receive coupons and promotions<br>
+      <input type="checkbox" name="option-3" value="refer">Refer a friend<br>
+      <input type="checkbox" name="option-4" value="all">All of the above<br>
+      <input type="submit" value="submit">
+    </form>
 
       <!-- Add a label for 'fullname'-->
 
