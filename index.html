@@ -7,11 +7,31 @@
   </head>
   <body>
 
-    <h1>Company Inc.</h1>
-    <h2>For all your incorporated company needs</h2>
+    <h1>Triad Firewood</h1>
+    <h2>Seasoned Firewood Year Round</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form action="http://example.com/process-user.php" method="POST">
+      <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter Name" required>
+      <label for="email">Enter your email address.</label>
+        <input type="email" id="email" placeholder="Enter Email" required>
+      <label for="phone">Enter your phone number.</label>
+        <input type="tel" id="phone" placeholder="Enter Telephone (optional)">
+      <label for="message">Type a message here.</label>
+        <textarea id="message" placeholder="Enter Message"></textarea>
+      <h3>Check all that apply.</h3>
+        <input type="checkbox" name="opt-1" value="14-16"> 14-16<br>
+        <input type="checkbox" name="opt-2" value="16-18"> 16-18<br>
+        <input type="checkbox" name="opt-3" value="Kindling"> Kindling<br>
+      
+      <input type="submit" value="Thank you for your order.  Someone will call you within a day to set up a delivery date and time.">
+  
+  
+    </form>
+    
+<!--    <label for="tel">Where should E.T. &trade; Phone Home?</label>-->
+<!--<input id="tel" type="tel" name="phone" placeholder="Phone Number">-->
 
       <!-- Add a label for 'fullname'-->
 
