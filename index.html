@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>My Awesome Company Contact Page</title>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
 
+    <form action="">
+        <!-- Add a label for 'fullname'-->
+        <label for="fullname"></label>
 
-      <!-- Add a label for 'fullname'-->
+        <!--When writing forms, we don't want to describe what goes in the form by using p tags. 
+          We can more meaningfully "tie" descriptive text (that is, a label) to an input field using the label tag.-->
+        <!--Labels are not strictly necessary on HTML forms. But they make our site better for those using assistive devices. It's the Right Thing to Do.-->
 
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
+        <!-- Add a text input with the id and name attributes set to 'fullname' -->
+        <!-- Include the place holder text "Enter Name" and make this input required -->
+        <input type="text" name="fullname" id="fullname" placeholder="Enter Name" required>
 
+        <!-- A fill-in-the-blank is an <input type="text"> -->
+        <!-- The placeholder attribute puts some dummy text into the element. 
+          That text will be replaced when the user starts filling it in.-->
+        <!-- The required attribute specifies that an input field must be filled out before submitting the form. -->
 
-      <!-- Add a label for 'email'-->
+        <!-- Add a label for 'email'-->
 
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
+        <label for="email"></label>
 
+        <!-- Add a email input with the id and name attributes set to 'email' -->
+        <!-- Include the place holder text "Enter Email" and make this input required -->
 
-      <!-- Add a label for 'phone'-->
-
-      <!-- Add a telephone input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Enter Telephone (optional)" -->
-
-
-      <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
-
+        <input type="email" name="email" id="email" placeholder="Enter Email" required>
 
 
-      <!-- Add an input with the type set to 'submit' -->
+        <!-- Add a label for 'phone'-->
 
-    
-  </body>
+        <label for="phone"></label>
+
+        <!-- Add a telephone input with the id and name attributes set to 'phone' -->
+        <!-- Include the place holder text "Enter Telephone (optional)" -->
+
+        <input type="tel" name="phone" id="phone" placeholder="Enter Telephone (optional)">
+
+        <!--Creating an input tag with type="tel" behaves like a text field, 
+          but will bring up the numeric keypad on supported mobile devices. -->
+
+        <!-- Add a label for 'message'-->
+
+        <label for="message"></label>
+
+        <!-- Add a textarea tag with the id and name attributes set to 'message' -->
+        <!-- Include the place holder text "Enter Message" -->
+
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Message"></textarea>
+
+        <!--<textarea> Textarea elements are useful if we want our users to be able to write multiple lines of text -->
+
+        <!-- Add a checkbox input with the id set to 'checkbox' -->
+        <input type="checkbox" id="checkbox">
+        <!-- Checkboxes are like radio buttons...but you can choose more than one. -->
+
+        <!-- Add an input with the type set to 'submit' -->
+        <input type="submit" value="submit">
+    </form>
+</body>
+
 </html>
