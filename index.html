@@ -11,38 +11,37 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
+      <form action="http://example.com/process-user.php" method="GET">
 
+    <!-- contains a "text" type input tag with an id of "fullname" and placeholderequal to "Enter Name"
+      Add a label for 'fullname'-->
+      <label for="fullname">Full Name</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Enter Name" required>
 
-      <!-- Add a label for 'fullname'-->
+    <!-- Contains an "email" type input tag with an id of "email" and placeholder equal to "Enter Email"
+    includes the "required" attribute on the fullname and email input tags-->
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter Email" required>
 
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
-
-
-      <!-- Add a label for 'email'-->
-
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
-
-
-      <!-- Add a label for 'phone'-->
-
+    <!-- contains a "tel" type input tag with an id of "phone" and placeholder equal to "Enter Telephone (optional)"-->
+    <!-- Add a label for 'phone'-->
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
-
+    <label for="phone">Phone Number</label>
+    <input type="tel" name="phone" id="phone" placeholder="Enter Telephone (optional)">
 
       <!-- Add a label for 'message'-->
-
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
-
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="Enter Message"></textarea>
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
+      <input type="checkbox" id="checkbox">
 
       <!-- Add an input with the type set to 'submit' -->
+      <input type="submit">
 
-    
+    </form>
   </body>
 </html>
