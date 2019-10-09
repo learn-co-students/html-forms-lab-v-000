@@ -11,38 +11,60 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form action="contact.php" method="post" class="contact-form">
 
       <!-- Add a label for 'fullname'-->
 
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
-
+      <div class="contact-form">
+        <label for="fullname">Full Name:</label>
+        <input type="text" name="fullname" placeholder="Enter Name" id="fullname" required>
+      </div>
 
       <!-- Add a label for 'email'-->
 
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
-
+      <div class="contact form">
+        <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="Enter Email" id="email" required>
+      </div>
 
       <!-- Add a label for 'phone'-->
 
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
-
+      <div class="contact-form">
+      <label for="phone">Telephone:</label>
+        <input type="tel" name="phone" placeholder="Enter Telephone (optional)" id="phone">
+      </div>
 
       <!-- Add a label for 'message'-->
 
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
-
+      <div class="contact=form">
+        <label for="message">Enter Message:</label>
+          <textarea name="message" placeholder="Enter Message" id="message"
+              rows="5" cols="33">
+            </textarea>
+          </dvi>
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
+      <div class="contact-form">
+        <h3>How did you hear about us?</h3>
+        <input type="checkbox" name="outreach1" value="social media"> social media<br>
+        <input type="checkbox" name="outreach2" value="friend">friend<br>
+        <input type="checkbox" name="outreach3" value="yellow pages"> yellow pages<br>
+      </div>
 
 
 
       <!-- Add an input with the type set to 'submit' -->
-
-    
+      <div class="contact-form">
+    <input type="submit" value="Submit">
+  </div>
+    </form>
   </body>
 </html>
