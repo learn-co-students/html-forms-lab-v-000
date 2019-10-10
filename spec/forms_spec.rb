@@ -45,7 +45,17 @@ RSpec.describe 'index.html' do
       expect(input.attributes["placeholder"].value).to eq("Enter Telephone (optional)") , "The third input should have a placeholder set to 'Enter Telephone (optional)'"
     end
 
-
+    it 'contains <label> tags for the fullname, email, phone and message form inputs ' do
+      labels = parsed_html.search('label')
+      expect(labels[0].attributes["for"]).to_not be_nil, "No label tags found"
+      expect(labels[0].attributes["for"].value).to eq("fullname"), "Include a label with a 'for' attribute set to 'fullname'"
+      expect(labels[1].attributes["for"]).to_not be_nil, "No label tag for email input found"
+      expect(labels[1].attributes["for"].value).to eq("email"), "Include a label with a 'for' attribute set to 'email'"
+      expect(labels[2].attributes["for"]).to_not be_nil, "No label tag for phone input found"
+      expect(labels[2].attributes["for"].value).to eq("phone"), "Include a label with a 'for' attribute set to 'phone'"
+      expect(labels[3].attributes["for"]).to_not be_nil, "No label tag for message input found"
+      expect(labels[3].attributes["for"].value).to eq("message"), "Include a label with a 'for' attribute set to 'message'"
+    end
 
     it 'contains an <textarea> tag with an id of "message" and placeholder equal to "Enter Message" ' do
       input = parsed_html.search('textarea')[0]
