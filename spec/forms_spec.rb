@@ -1,5 +1,6 @@
 
 
+
 RSpec.describe 'index.html' do
   it 'contains a <form> tag' do
     form = parsed_html.search('form')[0]
